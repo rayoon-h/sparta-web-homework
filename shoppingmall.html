@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <!--    스파르타 코딩클럽
+    웹개발 오프라인 13기
+    일요반 형나윤
+    Week 01 숙제-->
+
+    <title>온라인 쇼핑몰</title>
+    <!--부트스트랩-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!--    구글 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+
+    <!--1주차에 배운 CSS 활용-->
+    <style>
+        .page-width {
+            width: 600px;
+            margin: auto;
+        }
+
+        .img-center {
+            width: 500px;
+            margin: 20px auto;
+
+        }
+
+        .same-width {
+            width: 300px;
+        }
+
+        .btn-center {
+            width: 100px;
+            margin: auto;
+        }
+
+        .google-font {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+    </style>
+
+    <!--    1주차에 배운 Javascript 활용-->
+    <script>
+        function sayHi() {
+            alert("주문이 완료되었습니다! 감사합니다 :)")
+        }
+    </script>
+
+  </head>
+
+  <body>
+    <div class="page-width google-font">
+      <!--    이미지-->
+      <div class="img-center">
+        <img
+            src="https://lh3.googleusercontent.com/proxy/3tvhlzi1saDQ5zZ3GugsOWJNsCsiOaaz26Ly9uB84xVL66gx9D-gnvPQVYrOTAOY_ArBUCdyiRGxM_6FmO5V87mYbUw3HzAcDtxEMQ9--MVcB1U2pqtaqx5Pd0zvWPFn83tX">
+      </div>
+      <!--    상품 제목 타이틀-->
+      <div>
+        <span style="font-size: 200%; font-weight: bold">  상품 제목 </span>
+        <span style> 가격: 1,000,000원 / 개 </span>
+      </div>
+      <p>
+      <p style="font-size: 70%">이 상품으로 말할 것 같으면 용왕이 찾지 못한 토끼의 간을 찾아 빨간망토의 늑대와 아기 돼지 삼형제의 숨결이 고루 녹아 있는 먹으면 120세까지 살 수 있다는
+        이 상품으로 말할 것 같으면 용왕이
+        찾지
+        못한 토끼의 간을 찾아 빨간망토의 늑대와 아기 돼지...
+      </p>
+      </p>
+
+      <!--      주문하기 타이틀-->
+      <div>
+        <p style="font-size: 200%; font-weight: bold"> 주문하기 </p>
+      </div>
+
+      <!--            주문자 성함-->
+      <div class="input-group mb-3 same-width">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">주문자 성함: </span>
+        </div>
+        <input type="text" class="form-control " aria-label="name"
+               aria-describedby="basic-addon1">
+      </div>
+      <!--          수량-->
+      <div class="input-group mb-3 same-width">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">수량:</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <!--            주소-->
+      <div class="input-group mb-3 same-width">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"> 주소:</span>
+        </div>
+        <input type="text" class="form-control" aria-label="name"
+               aria-describedby="basic-addon1">
+      </div>
+      <!--            전화번호-->
+      <div class="input-group mb-3 same-width">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">전화번호:</span>
+        </div>
+        <input type="text" class="form-control" aria-label="name"
+               aria-describedby="basic-addon1">
+      </div>
+      <!--          주문하기 버튼-->
+      <div class="btn-center">
+        <button type="submit" class="btn btn-primary" onclick="sayHi()">주문하기</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--1주차 수고 많으셨습니다~ -->
+  </body>
+</html>
+
